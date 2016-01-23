@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+
+    <script src="./static/styles-script.js"></script>
+    <!-- <link rel="stylesheet" href="./static/styles.css"> -->
+    <title>Skills-HTML-CSS</title>
+    
+{% endblock %}
+
+
+{% block body %}
+
+    <h1> Job Application </h1>
+    <h4 class="instruction"> Submit your application below.</h4>
+    <form action="/application" method="POST">
+        <label>First Name: <input type="text" name="first-name"></label>
+        <br>
+        <label class="bold-text">Last Name: <input type="text" name="last-name"></label>
+        <br>
+        <label>Salary Requirement: <input type="number" name="salary"></label>
+        <br>
+        Which position are you applying for? <select name="position">
+            <label><option value="Software Engineer">Software Engineer</option></label>
+            <label><option value="QA Engineer">QA Engineer</option></label>
+            <label><option value="Product Manager">Product Manager</option></label>
+        </select>
+        <br>
+        <label><input type="submit"></label>
+    </form>
+
+{% endblock %}

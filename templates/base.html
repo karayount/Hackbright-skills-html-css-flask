@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    {% block head %}
+      HEADER GOES HERE
+    {% endblock %}
+</head>
+
+<body>
+<div class="container">
+
+  <!-- This is where the main content goes. -->
+  {% block body %}
+      BODY OF PAGE GOES HERE VIA INHERITANCE
+  {% endblock %}
+
+</div>
+
+</body>
+</html>

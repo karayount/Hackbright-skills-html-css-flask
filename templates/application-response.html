@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+
+    <title>Application Response</title>
+
+{% endblock %}
+
+
+{% block body %}
+    <br>
+    Thank you, {{ first }} {{ last }}, for applying to be a {{ position }}.
+    <br>
+    Your minimum salary requirement is {{ salary }} dollars.
+    <br><br>
+    We'll be in contact if your experience is a good fit.
+
+{% endblock %}
